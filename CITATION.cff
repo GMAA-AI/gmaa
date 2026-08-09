@@ -1,0 +1,27 @@
+# CITATION.cff — authored by the GMAA Application Packaging Architect seat, 2026-08-06. Lands verbatim.
+cff-version: 1.2.0
+message: "If you use or build on GMAA, cite it by version."
+title: "GMAA — Governed Multi-Agent Architecture"
+authors:
+  - family-names: "Heskiel"
+    given-names: "Israel"
+version: "2.5.3"
+date-released: "2026-08-09"
+url: "https://gmaa.ai"
+repository-code: "https://github.com/gmaa-ai/gmaa"
+license: "PolyForm-Internal-Use-1.0.0"
+notes: >-
+  Two-part licensing (open core): the specification in canon/ (the Governed
+  Multi-Agent Architecture, pinned v1.5 in this release) is licensed
+  CC BY 4.0, attribution required; the engine (everything else in this package)
+  is source-available for internal use only under PolyForm Internal Use 1.0.0. Cite by version on both
+  axes: package version and canon pin. Canonical home gmaa.ai.
+preferred-citation:
+  type: report
+  title: "Governed Multi-Agent Architecture"
+  authors:
+    - family-names: "Heskiel"
+      given-names: "Israel"
+  version: "1.5"
+  url: "https://gmaa.ai/canon.html"
+  notes: "The specification. Licensed CC BY 4.0; attribution required; cite by version."
