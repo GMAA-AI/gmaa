@@ -1,0 +1,8 @@
+{
+  "name": "gmaa-grok",
+  "version": "2.5.7",
+  "description": "Grok TUI harness for GMAA. Skills, commands, agents, hooks. Fetches the sealed companion engine zip into ~/Downloads; on adopt copies it into ~/Code/<project>/ still zipped. Spine stays in the engine zip.",
+  "author": {
+    "name": "GMAA Application Packaging"
+  }
+}
