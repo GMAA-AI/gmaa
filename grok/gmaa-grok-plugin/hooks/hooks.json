@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash ${GROK_WORKSPACE_ROOT}/scripts/boot-check.sh 2>&1 || true", "timeout": 15 }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|run_terminal_command",
+        "hooks": [
+          { "type": "command", "command": "bash ${GROK_WORKSPACE_ROOT}/scripts/guard-command-shape.sh", "timeout": 10 }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash ${GROK_WORKSPACE_ROOT}/.grok/hooks/orc-keep-working.sh", "timeout": 5 }
+        ]
+      }
+    ]
+  }
+}
